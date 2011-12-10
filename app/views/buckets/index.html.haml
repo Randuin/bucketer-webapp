@@ -1,0 +1,19 @@
+.row
+  = render 'form'
+.row#buckets-container
+  #bucket_a.six.columns.bucket
+    .content
+    .headliner
+      Max: 0
+    .value
+  #bucket_b.six.columns.bucket
+    .content
+    .headliner
+      Max: 0
+    .value
+
+
+#error-modal.reveal-modal
+  %h2 Error!
+  .modal-error-message
+  %a.close-reveal-modal &#215;

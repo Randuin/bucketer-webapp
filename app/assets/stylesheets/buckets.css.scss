@@ -1,0 +1,41 @@
+#buckets {
+  margin-top: 100px;
+}
+
+.form-field {
+  float: left;
+  margin-right: 20px;
+}
+
+.bucket {
+  background-color: #333;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+
+  .content {
+    background-image: linear-gradient(bottom, rgb(25,33,54) 14%, rgb(77,99,143) 57%, rgb(77,126,168) 79%);
+    background-image: -o-linear-gradient(bottom, rgb(25,33,54) 14%, rgb(77,99,143) 57%, rgb(77,126,168) 79%);
+    background-image: -moz-linear-gradient(bottom, rgb(25,33,54) 14%, rgb(77,99,143) 57%, rgb(77,126,168) 79%);
+    background-image: -webkit-linear-gradient(bottom, rgb(25,33,54) 14%, rgb(77,99,143) 57%, rgb(77,126,168) 79%);
+    background-image: -ms-linear-gradient(bottom, rgb(25,33,54) 14%, rgb(77,99,143) 57%, rgb(77,126,168) 79%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(25,33,54)), color-stop(0.57, rgb(77,99,143)), color-stop(0.79, rgb(77,126,168)));
+
+    width: 100%; height: 0px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .value, .headliner {
+    left: 1em;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    line-height: 36px;
+  }
+
+  .value { bottom: 1em }
+  .headliner { top: 1em }
+}

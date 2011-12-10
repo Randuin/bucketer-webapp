@@ -1,0 +1,15 @@
+= form_for :buckets, html: { class: 'nice', id: 'buckets_form' }, url: '/buckets/steps' do |f|
+  .form-field
+    = f.label :bucket_a_size
+    = f.text_field :bucket_a_size, class: 'input-text'
+
+  .form-field
+    = f.label :bucket_b_size
+    = f.text_field :bucket_b_size, class: 'input-text'
+
+  .form-field
+    = f.label :target_size
+    = f.text_field :target_size, class: 'input-text'
+
+  .form-field
+    = f.submit 'Get Solution!'
