@@ -8,6 +8,9 @@
   %body
     = render 'shared/github_ribbon'
     .container
+      .row
+        %h1 Bucketer
+    .container
       - # TODO: This looks pretty ugly, extract into helper or partial
       - if alert || notice
         .row
@@ -19,3 +22,7 @@
               = notice
       #buckets
         = yield
+
+    .container#bottom-half
+      .row
+        = render 'shared/developer_section'

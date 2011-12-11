@@ -8,3 +8,11 @@
 */
 
 .row { background-color: #fff; padding: 20px 40px; }
+#bottom-half {
+  background-color: #ddd;
+  padding: 40px;
+  .row {
+    border-radius: 20px;
+    background-color: #ddd;
+  }
+}

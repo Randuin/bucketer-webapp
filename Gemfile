@@ -19,6 +19,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'zurb-foundation'
 gem 'bucketer'
+gem 'coderay'
+gem 'coderay_bash'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
