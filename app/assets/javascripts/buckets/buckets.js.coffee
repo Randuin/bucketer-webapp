@@ -31,7 +31,7 @@ buckets =
         # This should go into the same animation queue for the containers
         # so that the numbers will sync correctly with the animation
         $('#bucket_a .content').queue (next) ->
-          $('#bucket_a .value').text(a_value)
+          $('#bucket_a .value').text("Current: " + a_value)
           next()
 
         $('#bucket_a .content').animate
@@ -43,7 +43,7 @@ buckets =
         height_b = ( 400 * ( b_value / buckets.b_max ) )
 
         $('#bucket_b .content').queue (next) ->
-          $('#bucket_b .value').text(b_value)
+          $('#bucket_b .value').text("Current: " + b_value)
           next()
 
         $('#bucket_b .content').animate
