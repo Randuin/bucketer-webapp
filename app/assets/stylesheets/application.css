@@ -7,5 +7,4 @@
  *= require_tree . 
 */
 
-.container { background-color: #ddd; }
 .row { background-color: #fff; padding: 20px 40px; }
