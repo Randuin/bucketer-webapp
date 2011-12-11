@@ -15,5 +15,14 @@ class BucketsController < ApplicationController
 
   # TODO: One-off that doesn't really belong in this controller, consider refactoring elsewhere if this codebase ever expands
   def share
+    email_regex = /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/
+    p = params[:share]
+    if p[:target_email] =~ email_regex
+      ShareMailer.share_email(p).deliver
+
+      redirect_to :back, notice: "Shared with friend!"
+    else
+      redirect_to :back, alert: "Friend email address doesn't quite look like an E-mail Address!"
+    end
   end
 end

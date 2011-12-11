@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+  %body
+    %h1= "Hello, #{@options[:target_name]}"
+    .body
+      :erb
+        <%= @options[:name] %> had heard that you were in need of a solution to your problem of needing to find the steps to measure
+        an arbitrary amount of water in two containers of sizes that no sane manufacturer would ever make. And they
+        had found just the thing! Bucketer will do just this for you! Visit <%= link_to 'Bucketer', root_url %> for all your bucketing needs!

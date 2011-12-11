@@ -7,5 +7,14 @@
     = csrf_meta_tags
   %body
     .container
+      - # TODO: This looks pretty ugly, extract into helper or partial
+      - if alert || notice
+        .row
+          - if alert
+            .alert-box.error
+              = alert
+          - if notice
+            .alert-box.success
+              = notice
       #buckets
         = yield
