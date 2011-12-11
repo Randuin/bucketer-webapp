@@ -6,3 +6,6 @@
  *= require foundation
  *= require_tree . 
 */
+
+.container { background-color: #ddd; }
+.row { background-color: #fff; padding: 40px; }
